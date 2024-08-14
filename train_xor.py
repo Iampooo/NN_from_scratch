@@ -7,9 +7,10 @@ from activations import tanh, tanh_prime, sigmoid, sigmoid_prime, relu, relu_pri
 from loss import mse, mse_prime
 
 ## Data
-x_train = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
-y_train = np.array([[0], [1], [1], [0]])
-
+# x_train = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
+# y_train = np.array([[0], [1], [1], [0]])
+x_train = np.array([[[0,0]], [[0,1]], [[1,0]], [[1,1]]])
+y_train = np.array([[[0]], [[1]], [[1]], [[0]]])
 ## Network
 net = Network()
 net.add(FCLayer(2, 3))

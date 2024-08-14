@@ -12,6 +12,7 @@ class FCLayer(Layer):
     def forward(self, input_data):
         self.input = input_data
         self.output = np.dot(self.input, self.weights) + self.bias
+        return self.output
 
     # Backward pass
     def backward(self, output_error, learning_rate):

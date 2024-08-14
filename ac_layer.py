@@ -5,7 +5,6 @@ from layer import Layer
 # Activation layer inherits from abstract class Layer
 class ActivationLayer(Layer):
     def __init__(self, activation, activation_prime):
-        super().__init__()  # Call the __init__ method of the superclass
         self.activation = activation
         self.activation_prime = activation_prime
 
